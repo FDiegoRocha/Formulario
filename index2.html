@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Input</title>
+
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/vetores-gratis/fundo-preto-com-malha-de-baixo-poli-vermelho-brilhante_1017-20215.jpg?w=2000);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        #formulario{
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid blue;
+            width: 330px;
+            height: 330px;
+            margin-top: 1%;
+            margin-left: 40%;
+            background-image: linear-gradient(to right, rgb(226, 95, 29), rgb(71, 8, 244));
+            border-radius: 10px;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+        div{
+           
+            width: 400px;
+            height: 300px;
+            padding-top: 0%;
+            display: block;   
+        }
+        #nasc{
+            
+            padding-top: 5px;
+            margin-top: 5px
+        }
+        #sexo{
+            height: 30px;
+            padding-top: 5px;
+            margin-top: 5px;
+        }
+        #checar{
+            padding-top: 1px;
+            height: 165px;
+        }
+        h2{
+            text-align: center;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulario Estudantil</h2>
+    <div id="formulario">
+        <form action="" method="">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" value="">
+                <div id="sexo">
+                    <label for="fem">Feminino:</label>
+                    <input type="radio" name="gender" id="fem" value="F" >
+                    <label for="masc">Masculino:</label>
+                    <input type="radio" name="gender" id="masc" value="M">
+                </div>
+                <label for="nasc">Data de nascimento:</label>
+                <input type="date" name="nasc" id="nasc"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="email@gmail.com"><br>
+                <div id="checar">
+                    <p>Tecnologias do seu conhecimento:</p>
+                    <input type="checkbox" name="option1" id="option1" value="1">
+                    <label for="option1">Javascript</label><br>
+                    <input type="checkbox" name="op2" id="op2" value="2">
+                    <label for="op2">HTML/CSS</label><br>
+                    <input type="checkbox" name="op3" id="op3" value="3">
+                    <label for="op3">JAVA</label><br>
+                    <input type="checkbox" name="op4" id="op4" value="4">
+                    <label for="op4">PHP</label>
+                </div>
+                <input type="reset" value="Resetar">
+                <input type="submit" value="Salvar">
+            </div>
+            <!--
+            <input type="color" value="#ff0000">
+        
+            <input type="datetime-local" name="" id="">
+        
+            <input type="submit" value="ok">
+            <input type="file" accept="image/png" multiple>
+            <input type="hidden" name="id" value="999">
+            <input type="month">
+            <input type="number" step="2">
+            <input type="password" name="" id="">
+            <input type="reset">
+            <input type="button" value="Salvar">
+            <input type="search">
+            <input type="tel">
+            <input type="time">
+            <input type="url">
+            <input type="week">
+            <input type="range" min="0" max="100" value="50">-->
+        </form>
+    </div>
+
+</body>
+</html>
