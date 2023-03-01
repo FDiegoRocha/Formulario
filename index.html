@@ -7,7 +7,7 @@
     <title>Formularios</title>
     <style>
         body{
-            background-image: url(https://img.freepik.com/vetores-gratis/fundo-preto-com-malha-de-baixo-poli-vermelho-brilhante_1017-20215.jpg?w=2000);
+            background-image: url(https://a-static.besthdwallpaper.com/3d-geometric-triangles-wallpaper-2048x1536-16988_26.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             
@@ -18,7 +18,7 @@
         div{
             width: 200px;
             height: 280px;
-            background-color: lightseagreen;
+            background-image: linear-gradient(45deg, rgb(190, 192, 184)40%,rgb(112, 6, 250));
             border: 1px solid lightgreen;
             border-radius: 20px;
             color: azure;
@@ -33,9 +33,13 @@
         }
         button{
             border-radius: 5px;
+            border-color: red;
             height: 30px;
             width: 180px;
             margin-left: 12px;
+            background-color: red;
+            color: white;
+            
         }
         
         a{
@@ -45,25 +49,30 @@
             font-size: 12px;
 
         }
-        h2{
+        h2, h5{
         text-align: center;
+        color: aqua;
         }
         .bloco{
             width: 185px;
+        }
+        label{
+            color: rgb(27, 27, 27);
         }
     </style>
 </head>
 <body>
     <div>
-        <h2>Meu primeiro formulário</h2>
-        <form action="index2.html" >
-            <label for="login">Login:</label>
+        <h2>Login</h2>
+        <h5>Acesse o formulário</h5>
+        <form action="pagina2.html" >
+            <label for="login">Usuário:</label>
                 <input class="bloco" type="text" name="login" id="login" placeholder="nome"><br><br>
             <label for="password">Senha:</label>
-                <input class="bloco" type="password" name="password" id="password"><br>
+                <input class="bloco" type="password" name="password" id="password" placeholder="1234"><br>
                 <input type="checkbox" name="checar" id="checar">
             <label id="checar" for="checar">Lembre-me</label><br><br>
-            <button type="submit">Acessar</button> 
+            <button type="submit">Logar</button> 
         </form>  
     </div>
 </body>
